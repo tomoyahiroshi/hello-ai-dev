@@ -67,3 +67,11 @@ pip install flask
   - Flask が未インストールです。`pip install flask` を実行してください。
 - `Address already in use`
   - 5000 番ポートが使われています。別プロセスを停止するか、ポート番号を変更してください。
+
+## 自動テスト（GitHub Actions）
+
+このリポジトリでは GitHub Actions で自動テストを実行します。
+
+- ワークフロー: `.github/workflows/test.yml`
+- 実行タイミング: `push` / `pull_request`
+- テスト実行コマンド: `pytest`
